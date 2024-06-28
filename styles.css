@@ -24,7 +24,7 @@ svg {
 
 .svg-container {
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -38,6 +38,7 @@ svg {
 
 .buttons {
     width: 90%;
+    max-width: 480px;
 }
 
 .circle {
@@ -70,15 +71,7 @@ svg {
 }
 
 @keyframes gradientAnimation {
-    0% {
-        fill: #4700D8;
-    }
-
-    50% {
-        fill: #9900F0;
-    }
-
-    100% {
-        fill: #4700D8;
-    }
+    0% { fill: #4700D8; }
+    50% { fill: #9900F0; }
+    100% { fill: #4700D8; }
 }
