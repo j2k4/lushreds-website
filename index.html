@@ -45,9 +45,14 @@
             height: auto;
         }
 
+        .buttons {
+            width: 90%;
+        }
+
         .circle {
             display: flex;
             align-items: center;
+            justify-content: center;
             margin: 10px;
             padding: 10px 20px;
             background: linear-gradient(45deg, #4700D8, #9900F0);
@@ -56,6 +61,7 @@
             text-decoration: none;
             font-size: 20px;
             transition: background-color 0.3s;
+            width: 100%;
         }
 
         .circle i {
@@ -153,7 +159,7 @@
                 </g>
             </svg>
         </div>
-        <div>
+        <div class="buttons">
             <a href="https://open.spotify.com/artist/6NcZzdLXWxAUZMvEgVhIx2" target="_blank" class="circle"><i
                     class="fab fa-spotify"></i>Spotify</a>
             <a href="https://music.apple.com/us/artist/lushreds/1712386231" target="_blank" class="circle"><i
@@ -166,7 +172,6 @@
                     class="fab fa-youtube"></i>YouTube</a>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
