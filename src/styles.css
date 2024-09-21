@@ -124,3 +124,16 @@ a:hover {
     50% { fill: #9900F0; }
     100% { fill: #4700D8; }
 }
+
+.content {
+    font-size: 24px;
+}
+
+.content a {
+    color: #FF85B3;
+}
+
+.content a:hover {
+    color: #9900F0;
+    text-decoration: underline;
+}
