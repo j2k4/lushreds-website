@@ -1,12 +1,14 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2025 by original authors @ fontello.com</metadata>
 <defs>
 <font id="fontello" horiz-adv-x="1000" >
 <font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
 <glyph glyph-name="user" unicode="&#xe800;" d="M714 69q0-60-35-104t-84-44h-476q-49 0-84 44t-35 104q0 48 5 90t17 85 33 73 52 50 76 19q73-72 174-72t175 72q42 0 75-19t52-50 33-73 18-85 4-90z m-143 495q0-88-62-151t-152-63-151 63-63 151 63 152 151 63 152-63 62-152z" horiz-adv-x="714.3" />
+
+<glyph glyph-name="crown" unicode="&#xe844;" d="M419 822c-39 0-71-32-71-72 0-40 32-72 71-72 39 0 74 32 74 72 0 40-35 72-74 72z m-48-222c-40-119-101-151-101-151s-52 145-109 231c-23-52-47-86-96-100-1-44 51-208 55-290l601 0c2 79 55 256 55 288-38 16-85 51-96 102-63-86-109-231-109-231s-61 32-101 151c-27-13-77-13-99 0z m-297 222c-40 0-74-32-74-72 0-40 34-72 74-72 39 0 70 32 70 72 0 40-31 72-70 72z m47-603l0-119 600 0c0 43 0 81 0 119z m644 603c-40 0-72-32-72-72 0-40 32-72 72-72 40 0 72 32 72 72 0 40-32 72-72 72z" horiz-adv-x="837" />
 
 <glyph glyph-name="youtube-play" unicode="&#xf16a;" d="M397 221l270 139-270 141v-280z m103 481q94 0 181-3t128-5l41-2q0 0 9-1t13-2 13-2 16-5 16-7 17-11 16-15q4-3 9-10t16-33 15-56q4-36 7-76t3-64v-98q1-81-10-162-4-30-14-55t-18-35l-8-9q-7-8-16-15t-17-10-16-7-16-5-13-2-13-2-9-1q-140-11-350-11-115 2-201 4t-111 4l-28 3-20 2q-20 3-30 5t-29 12-31 23q-4 3-9 10t-16 33-15 56q-4 36-7 76t-3 64v98q-1 81 10 162 4 31 14 55t18 35l8 9q8 9 16 15t17 11 16 7 16 5 13 2 13 2 9 1q140 10 350 10z" horiz-adv-x="1000" />
 

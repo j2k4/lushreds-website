@@ -68,6 +68,17 @@ svg {
     content: '\e800';
 }
 
+.fa-crown:before {
+    content: '\e844'; 
+}
+
+.fa-crown {
+  vertical-align: middle;
+  line-height: 1;
+  position: relative;
+  top: 3px; /* try 1–2px to nudge it down */
+}
+
 @font-face {
     font-family: 'fontello';
     src: url('./font/fontello.eot?48505729');
@@ -94,4 +105,13 @@ svg {
     margin-left: .2em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th {
+    border: 3px solid blue;
 }

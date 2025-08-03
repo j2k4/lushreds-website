@@ -10,5 +10,8 @@ create-404:
 build: minimize-css minimize-html create-404
 	@echo "Build complete"
 
+auth:
+	gcloud auth login
+
 deploy: build
 	gsutil -m cp -r -z html,css,js,txt,json,svg,xml ./dist/* gs://lushreds-website
