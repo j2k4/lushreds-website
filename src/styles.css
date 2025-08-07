@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     flex-direction: column;
     padding-top: 50px;
@@ -164,4 +164,55 @@ a:hover {
 .content a:hover {
     color: #0099CC;
     text-decoration: underline;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 640px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.form-wrapper {
+    width: 100%;
+}
+
+.form-wrapper iframe {
+    width: 100%;
+    height: 2200px;  /* Desktop height */
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    -webkit-overflow-scrolling: none;
+}
+
+/* Hide scrollbars but allow scrolling */
+.form-wrapper iframe::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+}
+
+.form-wrapper iframe {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.logo-link {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.logo-link svg {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 20px;
+    }
+    .form-wrapper iframe {
+        height: 2450px;  /* Taller height for mobile */
+    }
 }
