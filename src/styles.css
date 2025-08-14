@@ -1,6 +1,19 @@
+:root {
+    --brand-primary: #4700D8;
+    --brand-secondary: #9900F0;
+    --accent-primary: #F900BF;
+    --accent-secondary: #FF85B3;
+    
+    --link-primary: #00CCFF;
+    --link-hover: #0099CC;
+    
+    --text-primary: white;
+    --bg-primary: black;
+}
+
 body {
-    color: white;
-    background-color: black;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -18,11 +31,12 @@ svg {
 
 a {
     text-decoration: none;
-    color: #00CCFF;
+    color: var(--link-primary);
+    transition: color 0.2s;
 }
 
 a:hover {
-    color: #0099CC;
+    color: var(--link-hover);
 }
 
 .wrapper {
@@ -72,7 +86,6 @@ a:hover {
 .bio {
     width: 90%;
     max-width: 680px;
-    color: white;
     font-size: 20px;
     margin-bottom: 20px;
     padding: 0px 20px 0px 20px;
@@ -93,7 +106,7 @@ a:hover {
     width: 100%;
     max-width: 680px;
     height: auto;
-    border: #9900F0 4px solid;
+    border: var(--link-primary) 4px solid;
     display: block;
     margin: 0 auto;
 }
@@ -114,7 +127,6 @@ a:hover {
 
 .photo-credit a {
     text-decoration: underline;
-    transition: color 0.2s;
 }
 
 .buttons {
@@ -129,10 +141,10 @@ a:hover {
     justify-content: center;
     margin: 10px;
     padding: 10px 20px;
-    background: linear-gradient(45deg, #4700D8, #9900F0);
+    background: linear-gradient(45deg, var(--brand-primary), var(--brand-secondary));
     border-radius: 30px;
-    color: white;
     text-decoration: none;
+    color: var(--text-primary);
     font-size: 20px;
     transition: background-color 0.3s;
 }
@@ -143,27 +155,18 @@ a:hover {
 }
 
 .circle:hover {
-    background: linear-gradient(45deg, #9900F0, #FF85B3);
-    color: white;
+    background: linear-gradient(45deg, var(--brand-secondary), var(--accent-secondary));
+    color: var(--text-primary);
 }
 
 @keyframes gradientAnimation {
-    0% { fill: #4700D8; }
-    50% { fill: #9900F0; }
-    100% { fill: #4700D8; }
+    0% { fill: var(--brand-primary); }
+    50% { fill: var(--brand-secondary); }
+    100% { fill: var(--brand-primary); }
 }
 
 .content {
     font-size: 24px;
-}
-
-.content a {
-    color: #FF85B3;
-}
-
-.content a:hover {
-    color: #0099CC;
-    text-decoration: underline;
 }
 
 .form-container {
@@ -195,6 +198,101 @@ a:hover {
 .form-wrapper iframe {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+.show-links {
+    width: 90%;
+    max-width: 480px;
+    margin: 30px auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.show-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--bg-primary);
+}
+
+.show-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 204, 255, 0.4);
+}
+
+.show-card:hover .show-info h3 {
+    color: var(--link-hover);
+}
+
+.show-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    z-index: 1;
+}
+
+.show-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85) 60%);
+    padding: 40px 16px 16px 16px;
+}
+
+.show-info h3 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--link-primary);
+    line-height: 1.2;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.show-info p {
+    margin: 0;
+    font-size: 13px;
+    opacity: 0.95;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+    .show-links {
+        width: 95%;
+        gap: 12px;
+        margin: 25px auto;
+    }
+    
+    .show-card {
+        height: 450px;
+    }
+    
+    .show-info h3 {
+        font-size: 15px;
+    }
+    
+    .show-info p {
+        font-size: 12px;
+    }
+    
+    .show-info {
+        padding: 30px 14px 12px 14px;
+    }
 }
 
 .logo-link {
