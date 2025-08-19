@@ -8,6 +8,28 @@
         content="Producer and DJ LUSHREDS in Dallas Texas and Tokyo Japan, Music, Content Creation, House and EDM">
     <title>LUSHREDS</title>
     <link href="../styles.min.css" rel="stylesheet">
+    <style>
+        /* Clean solution: Remove all viewport height dependencies */
+        body {
+            min-height: auto !important;
+            height: auto !important;
+        }
+        
+        .wrapper {
+            min-height: auto !important;
+            height: auto !important;
+        }
+        
+        /* Let content determine page height naturally */
+        .form-container {
+            margin-bottom: 0;
+        }
+        
+        .mobile-form-link {
+            margin-bottom: 0;
+            padding-bottom: 20px;
+        }
+    </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V926JY8ZG4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -150,10 +172,43 @@
 
         <div class="form-container">
             <div class="form-wrapper">
-                <iframe scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLScXkRcPszT0SCG00V3CD4Nkl6jIt4Fudc3uZh_mmJrdWt6MZQ/viewform?embedded=true&amp;single=true" 
+                <iframe scrolling="no" height="2400" src="https://docs.google.com/forms/d/e/1FAIpQLScXkRcPszT0SCG00V3CD4Nkl6jIt4Fudc3uZh_mmJrdWt6MZQ/viewform?embedded=true&hl=en" 
                        title="LUSHREDS VIP Sign Up Form">Loading…</iframe>
             </div>
+            
+            <!-- Mobile fallback link -->
+            <div class="mobile-form-link" style="display: none; text-align: center; padding: 20px;">
+                <p>Having trouble with the form? Open it directly:</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScXkRcPszT0SCG00V3CD4Nkl6jIt4Fudc3uZh_mmJrdWt6MZQ/viewform" 
+                   target="_blank" class="circle" style="display: inline-block;">
+                   <i class="fab fa-crown"></i><span>Open VIP Form</span>
+                </a>
+            </div>
         </div>
+
+        <script>
+            // Clean mobile device detection and iframe height adjustment
+            function isMobileDevice() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                const iframe = document.querySelector('.form-wrapper iframe');
+                const fallbackLink = document.querySelector('.mobile-form-link');
+                
+                if (isMobileDevice()) {
+                    // Set mobile-optimized height for real mobile devices
+                    if (iframe) {
+                        iframe.height = '2500';
+                        iframe.style.height = '2500px';
+                    }
+                    
+                    // Show fallback option for mobile users
+                    if (fallbackLink) {
+                        fallbackLink.style.display = 'block';
+                    }
+                }
+            });
+        </script>
     </div>
 </body>
 

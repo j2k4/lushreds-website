@@ -183,21 +183,8 @@ a:hover {
 
 .form-wrapper iframe {
     width: 100%;
-    height: 2200px;  /* Desktop height */
     border: none;
     background: transparent;
-    overflow: hidden;
-    -webkit-overflow-scrolling: none;
-}
-
-/* Hide scrollbars but allow scrolling */
-.form-wrapper iframe::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari and Opera */
-}
-
-.form-wrapper iframe {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 .show-links {
@@ -309,8 +296,5 @@ a:hover {
 @media (max-width: 600px) {
     body {
         padding-top: 20px;
-    }
-    .form-wrapper iframe {
-        height: 2450px;  /* Taller height for mobile */
     }
 }
