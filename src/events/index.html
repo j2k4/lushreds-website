@@ -147,9 +147,17 @@
         </div>
         </a>
 
-        <div class="show-links">
+        <!-- Upcoming Events Section -->
+        <div class="show-links" id="upcoming-events"></div>
 
-            <a href="https://soundersdallas.com/blogs/news/jiqui-november-28th-2025-sounders-dallas" target="_blank" class="show-card">
+        <!-- Previous Experiences Section -->
+        <h2 class="section-heading" id="previous-heading" style="display: none;">Previous Experiences</h2>
+        <div class="show-links" id="previous-events"></div>
+
+        <!-- All events data (hidden, used by JavaScript) -->
+        <div id="all-events" style="display: none;">
+
+            <a href="https://soundersdallas.com/blogs/news/jiqui-november-28th-2025-sounders-dallas" target="_blank" class="show-card" data-date="2025-11-28">
                 <img src="../images/shows/sounders-jiqui.jpg" alt="Jiqui Event">
                 <div class="show-info">
                     <h3>Sounders Opening Debut for Jiqui</h3>
@@ -157,7 +165,15 @@
                 </div>
             </a>
 
-            <a href="https://www.instagram.com/p/DPwM41cDisi/" target="_blank" class="show-card">
+            <a href="https://www.instagram.com/p/DRAwXb2kjKx/" target="_blank" class="show-card" data-date="2025-11-22">
+                <img src="../images/shows/john-wayne-40th.jpg" alt="John Wayne's 40th Birthday">
+                <div class="show-info">
+                    <h3>John Wayne's 40th Birthday</h3>
+                    <p>Nov 22nd @ 9pm-2am - Insomnia Night Club, Fort Worth</p>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/p/DPwM41cDisi/" target="_blank" class="show-card" data-date="2025-11-14">
                 <img src="../images/shows/denton1000djs-nov2025.png" alt="Denton 1000 DJs Event">
                 <div class="show-info">
                     <h3>Denton 1000 DJs</h3>
@@ -165,7 +181,7 @@
                 </div>
             </a>
 
-            <a href="https://www.instagram.com/p/DQHaKm_DQHQ/" target="_blank" class="show-card">
+            <a href="https://www.instagram.com/p/DQHaKm_DQHQ/" target="_blank" class="show-card" data-date="2025-10-24">
                 <img src="../images/shows/funkytownfriday-october2025.jpg" alt="Funky Town Fridays Event">
                 <div class="show-info">
                     <h3>Funky Town Fridays</h3>
@@ -173,7 +189,7 @@
                 </div>
             </a>
 
-            <a href="https://www.facebook.com/share/16KP1NpBCE/" target="_blank" class="show-card">
+            <a href="https://www.facebook.com/share/16KP1NpBCE/" target="_blank" class="show-card" data-date="2025-10-12">
                 <img src="../images/shows/kids-fest-2025-10.jpg" alt="Kids Fest Event">
                 <div class="show-info">
                     <h3>Kids Fest</h3>
@@ -181,7 +197,7 @@
                 </div>
             </a>
 
-            <a href="https://www.instagram.com/p/DOJ1PQID65e/" target="_blank" class="show-card">
+            <a href="https://www.instagram.com/p/DOJ1PQID65e/" target="_blank" class="show-card" data-date="2025-10-11">
                 <img src="../images/shows/flow-sessions-october.jpg" alt="Flow Sessions DAR Event">
                 <div class="show-info">
                     <h3>Flow Sessions: Spooky Edition</h3>
@@ -189,7 +205,7 @@
                 </div>
             </a>
 
-            <a href="https://loop1tickets.com/FullGrindEnt/couchlands/" target="_blank" class="show-card">
+            <a href="https://loop1tickets.com/FullGrindEnt/couchlands/" target="_blank" class="show-card" data-date="2025-09-19">
                 <img src="../images/shows/couch-lands.jpg" alt="Couch Lands Live Stream Event">
                 <div class="show-info">
                     <h3>Couch Lands: A Live Stream Event</h3>
@@ -197,7 +213,7 @@
                 </div>
             </a>
 
-            <a href="https://posh.vip/e/wubbi-world" target="_blank" class="show-card">
+            <a href="https://posh.vip/e/wubbi-world" target="_blank" class="show-card" data-date="2025-09-05">
                 <img src="../images/shows/wubbi-world.png" alt="Wubbi World Event">
                 <div class="show-info">
                     <h3>Wubbi World Underground Music Festival</h3>
@@ -205,7 +221,7 @@
                 </div>
             </a>
 
-            <a href="https://www.facebook.com/share/1SpdJdnn33/" target="_blank" class="show-card">
+            <a href="https://www.facebook.com/share/1SpdJdnn33/" target="_blank" class="show-card" data-date="2025-08-23">
                 <img src="../images/shows/basslot.png" alt="Basslot Event">
                 <div class="show-info">
                     <h3>Flow Sessions: The Basslot</h3>
@@ -213,7 +229,7 @@
                 </div>
             </a>    
             
-            <a href="https://www.prekindle.com/event/54815-oasis-the-global-electronic-summer-music-pop-up-irving" target="_blank" class="show-card">
+            <a href="https://www.prekindle.com/event/54815-oasis-the-global-electronic-summer-music-pop-up-irving" target="_blank" class="show-card" data-date="2025-08-22">
                 <img src="../images/shows/united-as-one.png" alt="United As One Electronic Music Festival">
                 <div class="show-info">
                     <h3>United As One Electronic Music Festival</h3>
@@ -221,7 +237,7 @@
                 </div>
             </a>
 
-            <a href="https://www.prekindle.com/promo/id/-2853111880097969609" target="_blank" class="show-card">
+            <a href="https://www.prekindle.com/promo/id/-2853111880097969609" target="_blank" class="show-card" data-date="2025-08-22">
                 <img src="../images/shows/origins.png" alt="Origins Event">
                 <div class="show-info">
                     <h3>Origins: An Immersive Dance Music Experience</h3>
@@ -230,6 +246,62 @@
             </a>
 
         </div>
+
+        <script>
+            // Organize events by date on page load
+            document.addEventListener('DOMContentLoaded', function() {
+                const allEventsContainer = document.getElementById('all-events');
+                const upcomingContainer = document.getElementById('upcoming-events');
+                const previousContainer = document.getElementById('previous-events');
+                const previousHeading = document.getElementById('previous-heading');
+                
+                // Get all event cards
+                const eventCards = Array.from(allEventsContainer.querySelectorAll('.show-card'));
+                
+                // Get today's date at midnight (to include today as upcoming)
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                
+                // Separate into upcoming and past events
+                const upcomingEvents = [];
+                const pastEvents = [];
+                
+                eventCards.forEach(card => {
+                    const dateStr = card.getAttribute('data-date');
+                    if (!dateStr) return;
+                    
+                    const eventDate = new Date(dateStr);
+                    eventDate.setHours(0, 0, 0, 0);
+                    
+                    if (eventDate >= today) {
+                        upcomingEvents.push({ card, date: eventDate });
+                    } else {
+                        pastEvents.push({ card, date: eventDate });
+                    }
+                });
+                
+                // Sort upcoming events (soonest first)
+                upcomingEvents.sort((a, b) => a.date - b.date);
+                
+                // Sort past events (most recent first)
+                pastEvents.sort((a, b) => b.date - a.date);
+                
+                // Add upcoming events to container
+                if (upcomingEvents.length > 0) {
+                    upcomingEvents.forEach(event => {
+                        upcomingContainer.appendChild(event.card.cloneNode(true));
+                    });
+                }
+                
+                // Add past events to container
+                if (pastEvents.length > 0) {
+                    previousHeading.style.display = 'block';
+                    pastEvents.forEach(event => {
+                        previousContainer.appendChild(event.card.cloneNode(true));
+                    });
+                }
+            });
+        </script>
 
         <div class="buttons">
             <a href="../bio.html" class="circle">
