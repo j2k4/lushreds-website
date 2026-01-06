@@ -1,13 +1,13 @@
 :root {
-    --brand-primary: #4700D8;
-    --brand-secondary: #9900F0;
-    --accent-primary: #F900BF;
-    --accent-secondary: #FF85B3;
+    --brand-primary: #318277;
+    --brand-secondary: #38AF9A;
+    --accent-primary: #53CFB1;
+    --accent-secondary: #BBEFDD;
     
-    --link-primary: #00CCFF;
-    --link-hover: #0099CC;
+    --link-primary: #53CFB1;
+    --link-hover: #35948F;
     
-    --text-primary: white;
+    --text-primary: #BBEFDD;
     --bg-primary: black;
 }
 
@@ -144,7 +144,7 @@ a:hover {
     background: linear-gradient(45deg, var(--brand-primary), var(--brand-secondary));
     border-radius: 30px;
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--bg-primary);
     font-size: 20px;
     transition: background-color 0.3s;
 }
@@ -156,7 +156,7 @@ a:hover {
 
 .circle:hover {
     background: linear-gradient(45deg, var(--brand-secondary), var(--accent-secondary));
-    color: var(--text-primary);
+    color: var(--bg-primary);
 }
 
 @keyframes gradientAnimation {
@@ -213,7 +213,7 @@ a:hover {
 
 .show-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 204, 255, 0.4);
+    box-shadow: 0 8px 20px rgba(83, 207, 177, 0.4);
 }
 
 .show-card:hover .show-info h3 {
