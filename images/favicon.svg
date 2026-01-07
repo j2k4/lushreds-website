@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="teal-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#318277"/>
+      <stop offset="100%" stop-color="#53CFB1"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" fill="black"/>
+  <g transform="translate(-12, -35) scale(1.15)">
+    <!-- L -->
+    <path fill="url(#teal-gradient)" d="M47.83,179.38h156.5l-25.78,27.37H13.19L49.76,69.89h27.37L47.83,179.38z"/>
+    <!-- U -->
+    <path fill="url(#teal-gradient)" d="M200.95,69.89l-7.33,27.37c-3.14,11.41-9.77,21.1-19.89,29.08c-10.13,7.99-20.89,11.98-32.29,11.98
+      c-11.41,0-20.03-3.99-25.88-11.98c-5.85-7.98-7.2-17.68-4.06-29.08l7.27-27.37H91.4l-7.27,27.37c-5.13,18.96-2.82,35.11,6.95,48.43
+      c9.76,13.33,24.13,19.99,43.09,19.99c18.96,0,36.89-6.66,53.78-19.99c16.89-13.33,27.91-29.47,33.04-48.43l7.32-27.37H200.95z"/>
+  </g>
+</svg>
