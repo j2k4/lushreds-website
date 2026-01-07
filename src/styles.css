@@ -36,8 +36,20 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.25;
+    opacity: 0.30;
     z-index: -1;
+    /*
+    animation: backgroundPan 60s ease-in-out infinite alternate;
+    */
+}
+
+@keyframes backgroundPan {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 100% center;
+    }
 }
 
 svg {
