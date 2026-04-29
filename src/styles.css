@@ -450,3 +450,23 @@ a:hover {
         font-size: 26px;
     }
 }
+
+.next-event-highlight {
+    height: auto;
+}
+
+.next-event-highlight img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.next-event-highlight .ep-highlight-overlay {
+    background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+@media (max-width: 600px) {
+    .next-event-highlight {
+        height: auto;
+    }
+}
